@@ -46,7 +46,7 @@ end
 %Discontinuity planes
 num_disc=numel(data)/3;
 Dip=data.Dip(:);%read Dip value of discontinuities
-DipDir=data.DipDir(:);%read Dip Direction value of discontinuities
+DipDir=data.DipDirection(:);%read Dip Direction value of discontinuities
 Set=data.Set(:);%read Set value of discontinuities (random values are defined as NaN as default)
 Set(isnan(Set))=0;%change Set value of random discontinuities from NaN to 0
 Set_name=unique(Set);
